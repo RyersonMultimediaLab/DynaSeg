@@ -1,4 +1,9 @@
-# DynaSeg
+# DynaSeg: A deep dynamic fusion method for unsupervised image segmentation incorporating feature similarity and spatial continuity
+
+**Authors:** [Boujemaa Guermazi](mailto:bguermazi@torontomu.ca), [Riadh Ksantini](mailto:rksantini@uob.edu.bh), [Naimul Khan](mailto:n77khan@torontomu.ca )
+
+
+Official repository for [DynaSeg: A Deep Dynamic Fusion Method for Unsupervised Image Segmentation](https://doi.org/10.1016/j.imavis.2024.105206). This includes clean code and instructions for reproducing the results reported in our [Image and Vision Computing journal paper](https://doi.org/10.1016/j.imavis.2024.105206).
 
 ## Overview
 DynaSeg is a deep dynamic fusion method for unsupervised image segmentation that effectively balances feature similarity and spatial continuity. It automates parameter tuning through dynamic weighting, allowing for efficient segmentation without extensive hyperparameter adjustments. DynaSeg integrates seamlessly with existing segmentation networks and has been tested to achieve state-of-the-art performance on multiple benchmark datasets.
@@ -25,9 +30,13 @@ mim install mmcv-full
 ### Data Preparation
 To prepare the necessary data for training, follow these steps:
 
-1. **Download Datasets**: Download the training set and validation set of the COCO dataset, along with the stuffthing map.
+1. **Download Datasets**:
+   - **Training Set**: [Download the training set](http://images.cocodataset.org/zips/train2017.zip) of the COCO dataset.
+   - **Validation Set**: [Download the validation set](http://images.cocodataset.org/zips/val2017.zip) of the COCO dataset.
+   - **Stuffthing Map**: [Download the stuffthing map](http://calvin.inf.ed.ac.uk/wp-content/uploads/data/cocostuffdataset/stuffthingmaps_trainval2017.zip).
 
 2. **Unzip and Organize Data**: Unzip the data and organize it into the following directory structure:
+
 data/
 ```kotlin
 data/
@@ -50,7 +59,7 @@ data/
 
 The curated directory contains the data splits for unsupervised segmentation, structured according to the splits used by PiCIE.
 ## Acknowledgement
-This codebase is based on MMCV, and it benefits a lot from Densesiam, PiCIE MMSelfSup, and Detectron2.
+This codebase is based on MMCV, and it benefits a lot from DenseSiam, PiCIE MMSelfSup, and Detectron2.
 
 
 ## License
