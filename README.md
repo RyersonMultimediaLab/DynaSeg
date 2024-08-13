@@ -17,6 +17,9 @@ Install the required packages using the following commands:
 ```bash
 pip install openmim mmdet mmsegmentation mmselfsup
 mim install mmcv-full
+``` 
+
+
 ## Usage
 
 ### Data Preparation
@@ -25,6 +28,8 @@ To prepare the necessary data for training, follow these steps:
 1. **Download Datasets**: Download the training set and validation set of the COCO dataset, along with the stuffthing map.
 
 2. **Unzip and Organize Data**: Unzip the data and organize it into the following directory structure:
+data/
+```kotlin
 data/
 ├── curated
 │   ├── train2017
@@ -41,22 +46,21 @@ data/
 │   │   ├── xxxxxxxxx.jpeg
 │   ├── val2017
 │   │   ├── xxxxxxxxx.jpeg
-
+``` 
 
 The curated directory contains the data splits for unsupervised segmentation, structured according to the splits used by PiCIE.
-
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
 ## Citation
 If you use DynaSeg in your research, please cite our work:
-@article{YourCitationKey,
-  title={DynaSeg: A Deep Dynamic Fusion Method for Unsupervised Image Segmentation},
-  author={Boujemaa Guermazi and others},
-  journal={Journal Name},
+```sql
+@article{guermazi2024dynaseg,
+  title={DynaSeg: A deep dynamic fusion method for unsupervised image segmentation incorporating feature similarity and spatial continuity},
+  author={Guermazi, Boujemaa and Ksantini, Riadh and Khan, Naimul},
+  journal={Image and Vision Computing},
+  pages={105206},
   year={2024},
-  volume={XX},
-  number={XX},
-  pages={XX-XX},
-  doi={10.1000/xyz123}
+  publisher={Elsevier}
 }
+```
