@@ -42,7 +42,9 @@ data/
 │   ├── val2017
 │   │   ├── xxxxxxxxx.jpeg
 
+
 The curated directory contains the data splits for unsupervised segmentation, structured according to the splits used by PiCIE.
+
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
