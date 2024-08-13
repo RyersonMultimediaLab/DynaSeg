@@ -49,6 +49,10 @@ data/
 ``` 
 
 The curated directory contains the data splits for unsupervised segmentation, structured according to the splits used by PiCIE.
+## Acknowledgement
+This codebase is based on MMCV, and it benefits a lot from Densesiam, PiCIE MMSelfSup, and Detectron2.
+
+
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
