@@ -67,7 +67,7 @@ To evaluate DynaSeg on different datasets, follow these instructions:
 - After running the tests, you can calculate the mIoU using the script `tools/calculate_mIOU.py`.
 
 ## Acknowledgement
-This codebase is based on [MMCV](https://github.com/open-mmlab/mmcv), and it benefits a lot from [DenseSiam](https://github.com/TianWangZhang/DenseSiam), [PiCIE](https://github.com/janghyuncho/PiCIE), [MMSelfSup](https://github.com/open-mmlab/mmselfsup), and [Detectron2](https://github.com/facebookresearch/detectron2).
+This codebase is based on [MMCV](https://github.com/open-mmlab/mmcv), and it benefits a lot from [DenseSiam](https://github.com/ZwwWayne/DenseSiam), [PiCIE](https://github.com/janghyuncho/PiCIE), [MMSelfSup](https://github.com/open-mmlab/mmselfsup), and [Detectron2](https://github.com/facebookresearch/detectron2).
 
 
 ## License
