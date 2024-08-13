@@ -24,10 +24,7 @@ pip install openmim mmdet mmsegmentation mmselfsup
 mim install mmcv-full
 ``` 
 
-
-## Usage
-
-### Data Preparation
+## Data Preparation
 To prepare the necessary data for training, follow these steps:
 
 1. **Download Datasets**:
@@ -37,7 +34,6 @@ To prepare the necessary data for training, follow these steps:
 
 2. **Unzip and Organize Data**: Unzip the data and organize it into the following directory structure:
 
-data/
 ```kotlin
 data/
 ├── curated
@@ -57,14 +53,25 @@ data/
 │   │   ├── xxxxxxxxx.jpeg
 ``` 
 
-The curated directory contains the data splits for unsupervised segmentation, structured according to the splits used by PiCIE.
+The curated directory contains the data splits for unsupervised segmentation, structured according to the splits used by [PiCIE](https://github.com/janghyuncho/PiCIE).
+
+## Testing
+To evaluate DynaSeg on different datasets, follow these instructions:
+
+### COCO Dataset:
+- Use the script `tools/DynaSeg_COCO.py` to run the testing on the COCO dataset.
+- The mIoU (mean Intersection over Union) for all images will be stored in `eval_results.pkl`.
+
+### Pascal VOC 2012 and BSD500 Datasets:
+- Use the script `tools/DynaSeg_SCF_BSD_VOC.py` to run the testing on the Pascal VOC 2012 and BSD500 datasets.
+- After running the tests, you can calculate the mIoU using the script `tools/calculate_mIOU.py`.
+
 ## Acknowledgement
-This codebase is based on MMCV, and it benefits a lot from DenseSiam, PiCIE MMSelfSup, and Detectron2.
+This codebase is based on [MMCV](https://github.com/open-mmlab/mmcv), and it benefits a lot from [DenseSiam](https://github.com/TianWangZhang/DenseSiam), [PiCIE](https://github.com/janghyuncho/PiCIE), [MMSelfSup](https://github.com/open-mmlab/mmselfsup), and [Detectron2](https://github.com/facebookresearch/detectron2).
 
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
-
 ## Citation
 If you use DynaSeg in your research, please cite our work:
 ```sql
