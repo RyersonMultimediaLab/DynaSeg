@@ -7,6 +7,8 @@ Official repository for [DynaSeg: A Deep Dynamic Fusion Method for Unsupervised 
 
 ## Overview
 DynaSeg is a deep dynamic fusion method for unsupervised image segmentation that effectively balances feature similarity and spatial continuity. It automates parameter tuning through dynamic weighting, allowing for efficient segmentation without extensive hyperparameter adjustments. DynaSeg integrates seamlessly with existing segmentation networks and has been tested to achieve state-of-the-art performance on multiple benchmark datasets.
+
+
 ![Alt text](assets/DynamicWeightingSchemeforUnsupervisedImageSegmentation.png)
 ## Installation
 To set up DynaSeg, you need to install the following OpenMMLab packages:
