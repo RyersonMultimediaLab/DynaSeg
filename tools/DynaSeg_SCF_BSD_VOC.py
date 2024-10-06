@@ -106,11 +106,11 @@ for filename in os.listdir(input_folder):
                 cv2.imshow("output", im_target_rgb)
                 cv2.waitKey(10)
 
-            # SCF loss
-            loss = loss_fn(output, target) + nLabels/15 * (lhpy + lhpz)
-
             # FSF loss
-            # loss = loss_fn(output, target) + 50/nLabels * (lhpy + lhpz)
+            #loss = loss_fn(output, target) + nLabels/15 * (lhpy + lhpz)
+
+            # SCF loss
+            loss = loss_fn(output, target) + 50/nLabels * (lhpy + lhpz)
 
             loss.backward()
             optimizer.step()
